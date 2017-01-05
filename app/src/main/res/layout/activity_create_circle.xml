@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mac.oddpigeon.CreateCircleActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_circle" />
+
+                <EditText
+                    android:id="@+id/circle_name_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/circle_name"
+                    android:inputType="text"
+                    android:padding="15dp" />
+
+                <ImageView
+                    android:id="@+id/circle_cover_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/upload_circle_photo_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="@string/upload_circle_photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/circle_rules_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:text="@string/circle_rules" />
+
+                <EditText
+                    android:id="@+id/circle_rules"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/create_circle_hint_1"
+                    android:inputType="text"
+                    android:padding="15dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_rules_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + " />
+
+            <Button
+                android:id="@+id/create_circle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:text="Create" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>
